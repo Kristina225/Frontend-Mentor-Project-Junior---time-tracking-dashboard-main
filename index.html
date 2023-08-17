@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
+  
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+</head>
+<body>
+  <main>
+    <section class="profile">
+      <div class="profile-info">
+        <img src="images/image-jeremy.png" alt="profile image">
+        <div class="profile-info--text">
+          <p class="profile-info--data">Report for</p>
+          <p class="profile-info--name">Jeremy Robson</p>
+        </div>
+      </div>
+      <div class="timeframes">
+        <p class="timeframes--daily">Daily</p>
+        <p class="timeframes--weekly active">Weekly</p>
+        <p class="timeframes--monthly">Monthly</p>
+      </div>
+    </section>
+
+    <section class="report-cards">
+
+      <div class="report-card one">
+        <div class="background"></div>
+        <div class="content">
+          <div class="report-card--title">
+            <p>Work</p>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </div>
+  
+          <div class="report-card--hours">
+            <p class="current"><span class="current--hours work">32</span>hrs</p>
+            <p class="previous"><span class="timeframe work">Last Week</span> - <span class="previous--hours work">36</span>hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="report-card two">
+        <div class="background"></div>
+        <div class="content">
+          <div class="report-card--title">
+            <p>Play</p>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </div>
+          <div class="report-card--hours">
+            <p class="current"><span class="current--hours play">10</span>hrs</p>
+            <p class="previous"><span class="timeframe play">Last Week</span> - <span class="previous--hours play">8</span>hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="report-card three">
+        <div class="background"></div>
+        <div class="content">
+          <div class="report-card--title">
+            <p>Study</p>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </div>
+          <div class="report-card--hours">
+            <p class="current"><span class="current--hours study">4</span>hrs</p>
+            <p class="previous"><span class="timeframe study">Last Week</span> - <span class="previous--hours study">7</span>hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="report-card four">
+        <div class="background"></div>
+        <div class="content">
+          <div class="report-card--title">
+            <p>Exercise</p>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </div>
+          <div class="report-card--hours">
+            <p class="current"><span class="current--hours exercise">4</span>hrs</p>
+            <p class="previous"><span class="timeframe exercise">Last Week</span> - <span class="previous--hours exercise">10</span>hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="report-card five">
+        <div class="background"></div>
+        <div class="content">
+          <div class="report-card--title">
+            <p>Social</p>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </div>
+          <div class="report-card--hours">
+            <p class="current"><span class="current--hours social">5</span>hrs</p>
+            <p class="previous"><span class="timeframe social">Last Week</span> - <span class="previous--hours social">10</span>hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="report-card six">
+        <div class="background"></div>
+        <div class="content">
+          <div class="report-card--title">
+            <p>Self Care</p>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </div>
+          <div class="report-card--hours">
+            <p class="current"><span class="current--hours self-care">2</span>hrs</p>
+            <p class="previous"><span class="timeframe self-care">Last Week</span> - <span class="previous--hours self-care">2</span>hrs</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <script src="app.js"></script> 
+</body>
+</html>

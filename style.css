@@ -1,0 +1,300 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* TODO: Recheck all margins and paddings. Think about adding margins and padding inside elements.  */
+/* TODO: Add shadows, and hover effects */
+
+:root {
+    font-size: 62.5%;
+    --blue: #5847eb;
+    --light-red-work: #ff8c66;
+    --soft-blue-play: #56c2e6;
+    --light-red-study: #ff5c7c;
+    --lime-green-exercise: #4acf81;
+    --violet-social: #7536d3;
+    --soft-orange-selfcare: #f1c65b;
+    --very-dark-blue: #0f1424;
+    --dark-blue: #1c1f4a;
+    --desaturated-blue: #6f76c8;
+    --pale-blue: #bdc1ff;
+    --hover-blue: #33397A;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    height: 100vh;
+    background-color: var(--very-dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    gap: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.profile {
+    background-color: var(--dark-blue);
+    width: 25.5rem;
+    border-radius: 1.5rem;
+}
+
+.profile-info {
+    background-color: var(--blue);
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4.3rem;
+}
+
+.profile-info img {
+    margin-top: 3.7rem;
+    margin-left: 3.2rem;
+    border-radius: 50%;
+    width: 7.8rem;
+    border: 3px solid white;
+
+}
+
+.profile-info--text {
+    margin-left: 3.2rem;
+    margin-bottom: 8rem;
+}
+
+
+.profile-info--data {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--pale-blue);
+}
+
+.profile-info--name {
+    font-size: 4rem;
+    font-weight: 300;
+    color: white;
+    margin-top: 0.3rem;
+}
+
+.timeframes {
+    display: flex;
+    flex-direction: column;
+    gap: 2.1rem;
+    margin: 2.6rem 0 3.3rem 3.2rem;
+}
+
+.timeframes p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--desaturated-blue)
+}
+
+.timeframes--daily.active {
+    color: white;
+}
+
+.timeframes p:hover, .timeframes p:active {
+    color: white;
+    cursor: pointer;
+}
+
+
+
+/* --------------- report cards --------------- */
+
+.report-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(25.5rem, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.report-card {
+    background-color: var(--light-red-study);
+    border-radius: 1.5rem;
+    border-bottom-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+    color: white;
+    padding-top: 4.5rem;
+}
+
+.report-card--title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.report-card--title p {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+svg path:hover {
+    cursor: pointer;
+    fill: #FFF;
+}
+
+.report-card--hours {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 2.5rem;
+}
+
+.report-card--hours .current {
+    font-size: 5.6rem;
+    font-weight: 300;
+}
+
+.report-card--hours .previous {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--pale-blue);
+}
+
+.content {
+    border-radius: 1.5rem;
+    background-color: var(--dark-blue);
+    padding: 2.9rem 3rem 3.2rem 3rem;
+    height: 100%;
+    transition: background-color 0.3s;
+}
+
+.content:hover {
+    cursor: pointer;
+    background-color: var(--hover-blue);
+}
+
+.report-card.one {
+    background: url(images/icon-work.svg), var(--light-red-work);
+}
+
+.report-card.two {
+    background:url(images/icon-play.svg), var(--soft-blue-play);
+}
+
+.report-card.three {
+    background: url(images/icon-study.svg) , var(--light-red-study);
+}
+
+.report-card.four {
+    background: url(images/icon-exercise.svg), var(--lime-green-exercise);
+}
+
+.report-card.five {
+    background: url(images/icon-social.svg), var(--violet-social);
+}
+
+.report-card.six {
+    background: url(images/icon-self-care.svg), var(--soft-orange-selfcare);
+}
+
+.report-card.one, .report-card.two, .report-card.three, .report-card.four, .report-card.five, .report-card.six {
+    background-position: top -1.1rem right 1.7rem;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+
+.report-card.four {
+    background-position: top 0 right 1.7rem;
+}
+
+
+
+/* ----------------------------- Mobile Workflow -------------------------------- */
+
+@media only screen and (max-width: 1100px) {
+
+    body {
+        height: 100%;
+        margin: 8.1rem 0 8rem 0;
+    }
+    
+    main {
+        gap: 2.4rem;
+        flex-direction: column;
+    }
+
+
+    /*  */
+
+    .profile {
+        width: 32.7rem;
+
+    }
+    
+    .profile-info {
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+        padding: 3.5rem 0 3.4rem 0;
+    }
+    
+    .profile-info img {
+        margin-top: 0;
+        margin-left: 3.2rem;
+        width: 6.4rem;
+        height: 6.4rem;    
+    }
+    
+    .profile-info--text {
+        margin: 0;
+    }
+    
+    
+    .profile-info--name {
+        font-size: 2.4rem;
+    }
+
+    /*  */
+
+    
+    .timeframes {
+        flex-direction: row;
+        gap: 0;
+        justify-content: space-between;
+        margin: 2.4rem 3.2rem 2.5rem 3.2rem;
+    }
+    
+    
+    /* --------------- report cards --------------- */
+    
+    .report-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2.4rem;
+    }
+    
+    .report-card {
+        padding-top: 3.8rem;
+        min-width: 32.7rem;
+    }
+    
+    .report-card--hours {
+        gap: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .report-card--hours .current {
+        font-size: 3.2rem;
+    }
+    
+    .content {
+        border-radius: 1.5rem;
+        background-color: var(--dark-blue);
+        padding: 2.8rem 2.4rem;
+        height: 100%;
+    }
+
+}
