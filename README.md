@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/Kristina225/Frontend-Mentor-Project-Junior---time-tracking-dashboard-main
+- Live Site URL: https://time-tracking-dashboard-main-fm23.netlify.app/
 
 ## My process
 
